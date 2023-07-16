@@ -6,7 +6,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:2000/student-profile');
+        const response = await fetch('http://localhost:6000/student-profile');
         const json = await response.json();
         setStudentProfile(json);
       } catch (error) {
